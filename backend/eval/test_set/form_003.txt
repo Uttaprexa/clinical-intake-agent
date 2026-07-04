@@ -1,0 +1,16 @@
+Patient Registration & History
+
+Full Name: Aisha Patel
+Birth date: 11-02-1978
+SSN: 512-34-9871
+Phone: (555) 481-2093
+Email: aisha.patel@example.com
+Insurance: United Healthcare
+
+Presenting complaint: Recurring migraines, roughly 3x per week for the
+past month, sometimes with visual aura beforehand.
+
+Current meds: Sumatriptan as needed, Vitamin D supplement
+Allergies: Sulfa drugs - rash
+History: Migraine with aura since age 20, no other chronic conditions.
+Emergency contact: husband Raj Patel, 555-201-8834

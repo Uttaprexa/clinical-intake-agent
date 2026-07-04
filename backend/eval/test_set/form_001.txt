@@ -1,0 +1,12 @@
+Patient Intake Form
+
+Patient Name: Maria Gonzalez
+Date of Birth: 03/14/1985
+Insurance Provider: Blue Shield of California
+
+Reason for visit: I've had a sharp pain in my lower right abdomen since
+yesterday evening. It got worse overnight and I feel nauseous.
+
+Current medications: Lisinopril 10mg daily, Metformin 500mg twice daily
+Allergies: Penicillin (hives)
+Past medical history: Type 2 diabetes, hypertension, appendectomy denied

@@ -1,0 +1,42 @@
+{
+  "form_001.txt": {
+    "patient_name": "Maria Gonzalez",
+    "date_of_birth": "03/14/1985",
+    "chief_complaint": "sharp pain in lower right abdomen",
+    "symptom_onset": "yesterday evening",
+    "current_medications": "Lisinopril 10mg daily, Metformin 500mg twice daily",
+    "allergies": "Penicillin (hives)",
+    "past_medical_history": "Type 2 diabetes, hypertension",
+    "insurance_provider": "Blue Shield of California"
+  },
+  "form_002.txt": {
+    "patient_name": "David Chen",
+    "date_of_birth": "1990-07-22",
+    "chief_complaint": "persistent dry cough",
+    "symptom_onset": "about 3 weeks ago",
+    "current_medications": "None currently",
+    "allergies": "NKDA",
+    "past_medical_history": "Seasonal allergies",
+    "insurance_provider": "Aetna PPO"
+  },
+  "form_003.txt": {
+    "patient_name": "Aisha Patel",
+    "date_of_birth": "11-02-1978",
+    "chief_complaint": "recurring migraines with visual aura",
+    "symptom_onset": "past month",
+    "current_medications": "Sumatriptan as needed, Vitamin D supplement",
+    "allergies": "Sulfa drugs - rash",
+    "past_medical_history": "Migraine with aura since age 20",
+    "insurance_provider": "United Healthcare"
+  },
+  "form_004_sparse.txt": {
+    "patient_name": "J. Alvarez",
+    "date_of_birth": null,
+    "chief_complaint": "back pain",
+    "symptom_onset": null,
+    "current_medications": null,
+    "allergies": null,
+    "past_medical_history": null,
+    "insurance_provider": null
+  }
+}

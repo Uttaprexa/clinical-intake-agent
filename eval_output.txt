@@ -1,0 +1,45 @@
+[PASS] form_001.txt :: patient_name
+[PASS] form_001.txt :: date_of_birth
+[PASS] form_001.txt :: chief_complaint
+[PASS] form_001.txt :: symptom_onset
+[PASS] form_001.txt :: current_medications
+[PASS] form_001.txt :: allergies
+[PASS] form_001.txt :: past_medical_history
+[PASS] form_001.txt :: insurance_provider
+[PASS] form_002.txt :: patient_name
+[PASS] form_002.txt :: date_of_birth
+[FAIL] form_002.txt :: chief_complaint
+    predicted='Persistent dry cough for about 3 weeks, worse at night. No fever. Mild shortness of breath when climbing stairs.' ground_truth='persistent dry cough'
+    reasoning: The extracted value provides additional details not present in the ground truth value, such as duration and specific conditions under which symptoms worsen.
+[FAIL] form_002.txt :: symptom_onset
+    predicted=None ground_truth='about 3 weeks ago'
+    reasoning: One value is null, the other is not
+[PASS] form_002.txt :: current_medications
+[PASS] form_002.txt :: allergies
+[PASS] form_002.txt :: past_medical_history
+[PASS] form_002.txt :: insurance_provider
+[PASS] form_003.txt :: patient_name
+[PASS] form_003.txt :: date_of_birth
+[FAIL] form_003.txt :: chief_complaint
+    predicted='Recurring migraines, roughly 3x per week for the past month, sometimes with visual aura beforehand.' ground_truth='recurring migraines with visual aura'
+    reasoning: The extracted value provides additional details not present in the ground truth, specifically the frequency and duration of the migraines.
+[PASS] form_003.txt :: symptom_onset
+[PASS] form_003.txt :: current_medications
+[PASS] form_003.txt :: allergies
+[PASS] form_003.txt :: past_medical_history
+[PASS] form_003.txt :: insurance_provider
+[PASS] form_004_sparse.txt :: patient_name
+[PASS] form_004_sparse.txt :: date_of_birth
+[PASS] form_004_sparse.txt :: chief_complaint
+[PASS] form_004_sparse.txt :: symptom_onset
+[PASS] form_004_sparse.txt :: current_medications
+[PASS] form_004_sparse.txt :: allergies
+[PASS] form_004_sparse.txt :: past_medical_history
+[PASS] form_004_sparse.txt :: insurance_provider
+
+--- Eval Summary ---
+Total fields graded: 32
+Accuracy: 90.6%
+Hallucination rate: 0.0%
+
+Full report written to /app/eval/last_run_report.json

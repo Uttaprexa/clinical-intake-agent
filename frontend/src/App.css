@@ -1,0 +1,102 @@
+.app-shell { min-height: 100vh; }
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 14px 28px;
+  background: #14213d;
+  color: white;
+}
+.top-nav a { color: #c9d3e6; text-decoration: none; font-size: 14px; }
+.top-nav a.active { color: white; font-weight: 600; }
+.brand { font-weight: 700; margin-right: auto; }
+
+.page { max-width: 960px; margin: 0 auto; padding: 32px 24px; }
+h1 { font-size: 22px; }
+
+.upload-box { margin: 16px 0 28px; }
+.upload-label {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #14213d;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.queue-table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+.queue-table th, .queue-table td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid #e3e6ea;
+  font-size: 14px;
+}
+
+.status-pill {
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.status-uploaded, .status-extracting { background: #fff3cd; color: #8a6d00; }
+.status-needs_review { background: #fde2e1; color: #9c2b25; }
+.status-validated, .status-exported { background: #d9f2e3; color: #1e7a45; }
+.status-failed { background: #f1c4c4; color: #7a1e1e; }
+
+.fields-box, .summary-box, .issues-box { margin-top: 24px; }
+
+.field-row {
+  padding: 10px 0;
+  border-bottom: 1px solid #eceff2;
+}
+.field-flagged { background: #fffaf0; }
+.field-label { font-size: 12px; color: #6b7280; margin-bottom: 4px; }
+.field-display { display: flex; align-items: center; gap: 10px; cursor: pointer; }
+.field-value { font-size: 15px; }
+.field-edit { display: flex; gap: 8px; }
+.field-edit input { flex: 1; padding: 6px 8px; font-size: 14px; }
+
+.badge {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+.badge-high { background: #d9f2e3; color: #1e7a45; }
+.badge-medium { background: #fff3cd; color: #8a6d00; }
+.badge-low { background: #fde2e1; color: #9c2b25; }
+.badge-neutral { background: #e6e8eb; color: #4b5563; }
+
+.issue-error { color: #9c2b25; }
+.issue-warning { color: #8a6d00; }
+
+.error-text { color: #9c2b25; font-size: 13px; margin-top: 6px; }
+.empty-state { color: #6b7280; }
+
+.metrics-row { display: flex; gap: 16px; margin: 20px 0; }
+.metric-card {
+  flex: 1;
+  padding: 18px;
+  border-radius: 10px;
+  background: white;
+  border: 1px solid #e3e6ea;
+}
+.metric-pass { border-color: #1e7a45; }
+.metric-fail { border-color: #9c2b25; }
+.metric-label { font-size: 12px; color: #6b7280; }
+.metric-value { font-size: 28px; font-weight: 700; margin-top: 4px; }
+.metric-threshold { font-size: 11px; color: #9aa1ab; margin-top: 4px; }
+
+button {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid #d0d5dd;
+  background: white;
+  cursor: pointer;
+  font-size: 13px;
+}
+button:hover { background: #f2f4f7; }
+
+.export-button-wrap { margin-top: 28px; }

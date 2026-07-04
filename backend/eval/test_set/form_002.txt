@@ -1,0 +1,11 @@
+NEW PATIENT INTAKE
+
+Name: David Chen   DOB: 1990-07-22
+Insurance: Aetna PPO
+
+Chief complaint: Persistent dry cough for about 3 weeks, worse at night.
+No fever. Mild shortness of breath when climbing stairs.
+
+Medications: None currently
+Allergies: NKDA (no known drug allergies)
+Past medical history: Seasonal allergies, otherwise unremarkable.
