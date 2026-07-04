@@ -9,6 +9,30 @@ Built as a portfolio project modeling the kind of clinical documentation
 automation used in real EHR/RCM platforms — not a certified medical device
 or HIPAA-compliant production system. See "Scope & honest limitations" below.
 
+## In action
+
+| Intake Queue | Review + confidence flags | Eval Dashboard |
+|---|---|---|
+| ![Queue](docs/screenshots/queue.png) | ![Review](docs/screenshots/review.png) | ![Eval](docs/screenshots/eval_dashboard.png) |
+
+## A real finding from the eval harness
+
+Running the same pipeline against two providers surfaced a genuine
+reliability difference:
+
+- **Claude (`anthropic` provider)**: 100% extraction accuracy, 0% hallucination.
+- **Llama 3.1 8B, run locally (`ollama` provider)**: 90.6% extraction
+  accuracy, 0% hallucination *on extraction* — but the **summarization**
+  step invented an unstated patient age and gender ("a 44-year-old female")
+  by inferring demographics from a name and DOB, something the source text
+  never stated and Claude did not do on the same input.
+
+This is exactly the failure mode `eval/graders.py`'s hallucination grader
+is designed to catch — except it only currently grades the *extraction*
+step, not summarization. That's a known gap (see limitations below), not
+a hidden one: the harness caught a real problem before it reached a
+reviewer, then immediately showed where its own coverage should expand next.
+
 ## Architecture
 
 ```
