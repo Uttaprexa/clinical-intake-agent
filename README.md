@@ -12,9 +12,7 @@ or HIPAA-compliant production system. See "Scope & honest limitations" below.
 ## In action
 
 | Intake Queue | Review + confidence flags | Eval Dashboard |
-|---|---|---|
-| ![Queue](docs/screenshots/queue.png) | ![Review](docs/screenshots/review.png) | ![Eval](docs/screenshots/eval_dashboard.png) |
-
+|---|---|---|| ![Queue](queue.png) | ![Review](review.png) | ![Eval](eval_dashboard.png) |
 ## A real finding from the eval harness
 
 Running the same pipeline against two providers surfaced a genuine
