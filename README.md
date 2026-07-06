@@ -18,18 +18,13 @@ or HIPAA-compliant production system. See "Scope & honest limitations" below.
 Running the same pipeline against two providers surfaced a genuine
 reliability difference:
 
-- **Claude (`anthropic` provider)**: 100% extraction accuracy, 0% hallucination.
-- **Llama 3.1 8B, run locally (`ollama` provider)**: 90.6% extraction
-  accuracy, 0% hallucination *on extraction* — but the **summarization**
-  step invented an unstated patient age and gender ("a 44-year-old female")
-  by inferring demographics from a name and DOB, something the source text
-  never stated and Claude did not do on the same input.
+- Mock mode (heuristic, not a real model): 100% on its own scoring, expected, since it's pattern-matching against forms I wrote the patterns around, not actually reasoning.
+- Llama 3.1 8B, run locally (ollama provider): 90.6% extraction accuracy, 0% hallucination on extraction, but the summarization step invented an unstated patient age and gender ('a 44-year-old female'), something the source text never stated.
 
 This is exactly the failure mode `eval/graders.py`'s hallucination grader
 is designed to catch — except it only currently grades the *extraction*
 step, not summarization. That's a known gap (see limitations below), not
-a hidden one: the harness caught a real problem before it reached a
-reviewer, then immediately showed where its own coverage should expand next.
+a hidden one: I caught this myself by reading the summary in the Review UI, not through the harness, which is exactly the gap this project should close next.
 
 ## Architecture
 
