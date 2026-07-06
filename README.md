@@ -171,6 +171,15 @@ This is a portfolio project, not production healthcare software:
   statistically powered accuracy benchmark.
 - **OCR is not implemented** for scanned/image-only PDFs — `ingest.py`
   raises a clear error in that case rather than silently failing.
+- **The eval test set has implicit, undocumented inclusion/exclusion criteria.**
+  The 4 synthetic forms are all English-language, typed (not handwritten or
+  scanned) intake forms with clearly labeled fields. **Included**: complete
+  or near-complete typed forms in this format. **Excluded**: handwritten
+  forms, non-English forms, forms requiring OCR, and forms with
+  non-standard/ambiguous field labeling — none of these are represented in
+  the test set or currently supported by the pipeline. Any accuracy or
+  hallucination numbers reported above only generalize within this scope,
+  not beyond it.
 
 ## Repo layout
 
